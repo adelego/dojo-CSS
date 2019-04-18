@@ -16,27 +16,25 @@ module.exports = {
     filename: 'bundle.js'
   },
   module: {
-    loaders: [{
+    rules: [{
       test: /\.js$/,
       exclude: /(node_modules|bower_components)/,
-      loaders: ['react-hot', 'babel?presets[]=react,presets[]=es2015']
+      loaders: ['react-hot-loader', 'babel-loader?presets[]=react,presets[]=es2015']
     }, {
       test: /\.html$/,
-      loader: 'file?name=[name].[ext]'
+      loader: 'file-loader?name=[name].[ext]'
     },
     {
       test:/\.(s*)css$/,
       loaders:['style-loader','css-loader', 'sass-loader']
     }
   ],
-    
-      
-    
+
   },
   plugins: [
-    new webpack.optimize.OccurenceOrderPlugin(),
+  //   new webpack.optimize.OccurenceOrderPlugin(),
     new webpack.HotModuleReplacementPlugin(),
-    new webpack.NoErrorsPlugin()
+  //   new webpack.NoErrorsPlugin()
   ]
 };
 
