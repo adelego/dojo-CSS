@@ -6,7 +6,7 @@
 `git clone git@github.com:theodo/dojo-CSS.git && cd dojo-CSS`
 
 #### 2 Install the project
-`yarn start`
+`yarn install`
 
 #### 3 Go to the DOJO branch
 `git co start-branch`
@@ -15,6 +15,7 @@
 Ask us to invite you on the Invision project to have access to the mocj-up (you'll need to register)
 
 #### 5 Let's go !
+`yarn start`
 
 The target is to reproduce the design of the mock-up, you already have the start of the project with :
  - 2 react components, Header.js and Card.js with their own stylesheets
