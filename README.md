@@ -1,42 +1,33 @@
+# Welcome to the Integration DOJO
+
+### Tasks
+
+#### 1 Clone this repository
+`git clone git@github.com:theodo/dojo-CSS.git && cd dojo-CSS`
+
+#### 2 Install the project
+`yarn start`
+
+#### 3 Go to the DOJO branch
+`git co start-branch`
+
+#### 4 Check out the expected design on In-vision
+Ask us to invite you on the Invision project to have access to the mocj-up (you'll need to register)
+
+#### 5 Let's go !
+
+The target is to reproduce the design of the mock-up, you already have the start of the project with :
+ - 2 react components, Header.js and Card.js
+ - 1 stylesheet with some basic fonts / colors
+ - the needed API requests to populate your card, from the pokemonList you have, for each pokemon you can access the requested data with : 
+    - name : `pokemon.sprites.name`
+    - logo : `pokemon.sprites.front_default`
+    - types : `pokemon.types[x]type.name, pokemon.types[x+1]type.name` ...
+    - id : `pokemon.sprites.id`
+ 
+ You will proceed element by element and follow the advice you got from the quick presentation.
+ 
+ **Don't hesitate to andon if you have any technical or mock-up related question !**
 
 
-1  oddish  https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/43.png   [ poison,  grass, ] 43  
-2  nidoran-m  https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/32.png   [ poison, ] 32  
-3  zapdos  https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/145.png   [ flying,  electric, ] 145  
-4  muk  https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/89.png   [ poison, ] 89  
-5  alakazam  https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/65.png   [ psychic, ] 65  
-6  scyther  https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/123.png   [ flying,  bug, ] 123  
-
-
-
-
-
-
-
-
-
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 

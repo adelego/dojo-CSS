@@ -7,7 +7,7 @@
     top: 0;
     background-color: white;
     border-bottom: solid 1px $gray-light;
-    padding: 30px;
+    padding: 20px 30px;
     .header{
         display: flex;
         flex-direction: row;
@@ -20,11 +20,10 @@
         align-items: center;
     }
     .header_text {
-        margin-right: 20px;
+        margin-right: 30px;
         color: black;
         font-size: $font-size-medium;
         line-height: $line-height-medium;
-        font-weight: 600;
         &:hover{
             color: $blue-dark;
             cursor: pointer;
@@ -33,14 +32,14 @@
     }
     .header_search_input {
         width: 200px;
-        margin-right: 20px;
+        margin-right: 30px;
         padding: 8px 16px;
-        border : solid 1px $gray-very-light;
+        border : solid 1px $blue-medium-light;
         border-radius: 4px;
         box-shadow: none;
         &::placeholder {
             font-style: italic;
-            color: $gray-very-light;
+            color: $gray-light;
             font-size: $font-size-small;
         }
     }

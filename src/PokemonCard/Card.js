@@ -37,18 +37,24 @@ class Card extends Component {
 
         {pokemonList.length > 0 &&
           pokemonList.map((pokemon, index) =>
-              <div>
-                {index+1} &nbsp;
-
-                {pokemon.name} &nbsp;
-
-                {pokemon.sprites.front_default} &nbsp;
-
-                [{pokemon.types.map(typeArray =>
-                    <span> {typeArray.type.name},&nbsp;</span>
-                )}]&nbsp;
-
-                {pokemon.id} &nbsp;
+              <div className={style.card}>
+                <div className={style.cardNumber}>
+                  {index+1}
+                </div>
+                <div className={style.cardLogo}>
+                  <img src={pokemon.sprites.front_default} alt="" />
+                </div>
+                <div className={style.cardNameAndTypes}>
+                  <span className={style.cardName}>{pokemon.name}</span>
+                  <span className={style.cardTypes}>
+                    {pokemon.types.map(typeArray =>
+                        <span className={style.cardType}> {typeArray.type.name},&nbsp;</span>
+                    )}
+                  </span>
+                </div>
+                <div className={style.cardId}>
+                  {pokemon.id}
+                </div>
               </div>
           )
         }
