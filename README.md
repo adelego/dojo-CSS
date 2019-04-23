@@ -17,8 +17,8 @@ Ask us to invite you on the Invision project to have access to the mocj-up (you'
 #### 5 Let's go !
 
 The target is to reproduce the design of the mock-up, you already have the start of the project with :
- - 2 react components, Header.js and Card.js
- - 1 stylesheet with some basic fonts / colors
+ - 2 react components, Header.js and Card.js with their own stylesheets
+ - 1 global stylesheet with some basic fonts / colors
  - the needed API requests to populate your card, from the pokemonList you have, for each pokemon you can access the requested data with : 
     - name : `pokemon.sprites.name`
     - logo : `pokemon.sprites.front_default`

@@ -33,28 +33,16 @@ class Card extends Component {
     const pokemonList = this.state.pokemonList;
     return (
       <div className="Card">
-        <div className={style.content}></div>
-
         {pokemonList.length > 0 &&
           pokemonList.map((pokemon, index) =>
-              <div className={style.card}>
-                <div className={style.cardNumber}>
-                  {index+1}
-                </div>
-                <div className={style.cardLogo}>
-                  <img src={pokemon.sprites.front_default} alt="" />
-                </div>
-                <div className={style.cardNameAndTypes}>
-                  <span className={style.cardName}>{pokemon.name}</span>
-                  <span className={style.cardTypes}>
+              <div>
+                  {index+1} &nbsp;
+                  <img src={pokemon.sprites.front_default} alt="" /> &nbsp;
+                  {pokemon.name} &nbsp;
                     {pokemon.types.map(typeArray =>
                         <span className={style.cardType}> {typeArray.type.name},&nbsp;</span>
                     )}
-                  </span>
-                </div>
-                <div className={style.cardId}>
-                  {pokemon.id}
-                </div>
+                  {pokemon.id} &nbsp;
               </div>
           )
         }
