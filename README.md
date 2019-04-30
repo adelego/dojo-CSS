@@ -12,11 +12,28 @@
 `git co start-branch`
 
 #### 4 Check out the expected design on In-vision
-Ask us to invite you on the Invision project to have access to the mocj-up (you'll need to register)
+You can check the mock-up on the following link : [link](https://invis.io/WJRNTWU32NX)
+If you want to access it in inspect mode, send me an email to ask to be added to the project :
+**antoiner@theodo.fr**
 
 #### 5 Let's go !
 `yarn start`
 
+#### As a reminder :
+
+**Check the standard below to make sure you have everything in your ticket:**
+ - I can see a static visible result like a screenshot of the mock up or a drawing
+ - I have all the assets I need
+ - I know what the edge cases are
+ - I know how it looks like on different screen size
+
+**and:**
+
+ - List all the components /containers you will use/create/insert content into
+ - List for each component their margin and padding
+ - List for each component the fixed sizes
+ - List position properties for each element
+ - List tricky cosmetic properties 
 The target is to reproduce the design of the mock-up, you already have the start of the project with :
  - 2 react components, Header.js and Card.js with their own stylesheets
  - 1 global stylesheet with some basic fonts / colors
@@ -33,23 +50,10 @@ As a user, on the url `localhost:3000`, I can see a header designed as it is on 
 ##### Ticket 2 : 
 As a user, on the url `localhost:3000`, I can see a Card with the information of my Pokemon team, designed as it is on the mock-up.
   
-###As a reminder :
 
-**Check the standard below to make sure you have everything in your ticket:**
- - I can see a static visible result like a screenshot of the mock up or a drawing
- - I have all the assets I need
- - I know what the edge cases are
- - I know how it looks like on different screen size
-
-**and:**
-
- - List all the components /containers you will use/create/insert content into
- - List for each component their margin and padding
- - List for each component the fixed sizes
- - List position properties for each element
- - List tricky cosmetic properties 
   
  **Don't hesitate to andon if you have any technical or mock-up related question !**
 
-###Good luck !
+( if you don't have all the assets you need, try an check the other branchs for the actual start branch :) ) 
+### Good luck !
 
