@@ -1,5 +1,14 @@
 import React, { useEffect, useState } from "react";
-import { Pokedex as StyledPokedex } from "./Pokedex.style";
+import {
+  PokedexContainer,
+  PokemonEntry,
+  PokemonId,
+  PokemonImage,
+  PokemonName,
+  PokemonNameContainer,
+  PokemonType,
+  TeamNumber,
+} from "./Pokedex.style";
 import { fetchPokemon } from "./fetchPokemon";
 
 export const Card = () => {
@@ -13,20 +22,24 @@ export const Card = () => {
   }, []);
 
   return (
-    <StyledPokedex>
+    <PokedexContainer>
       {pokemonList.length > 0 &&
         pokemonList.map((pokemon, index) => (
-          <div>
-            {index + 1} &nbsp;
-            <img src={pokemon.sprites.front_default} alt="" /> &nbsp;
-            {pokemon.name} &nbsp;
-            {pokemon.types.map((typeArray) => (
-              <span id="cardType"> {typeArray.type.name},&nbsp;</span>
-            ))}
-            {pokemon.id} &nbsp;
-          </div>
+          <PokemonEntry>
+            <TeamNumber>{index + 1}</TeamNumber>
+            <PokemonImage src={pokemon.sprites.front_default} alt="" />
+            <PokemonNameContainer>
+              <PokemonName>{pokemon.name}</PokemonName>
+              <div>
+                {pokemon.types.map((typeArray) => (
+                  <PokemonType>{typeArray.type.name}</PokemonType>
+                ))}
+              </div>
+            </PokemonNameContainer>
+            <PokemonId>{pokemon.id}</PokemonId>
+          </PokemonEntry>
         ))}
-    </StyledPokedex>
+    </PokedexContainer>
   );
 };
 
