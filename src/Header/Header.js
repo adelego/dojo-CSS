@@ -1,18 +1,13 @@
-import React, { Component } from 'react';
-import style from './Header.module.scss'
-
-var classNames = require('classnames');
-
+import React, { Component } from "react";
+import { Header as StyledHeader } from "./Header.style";
 
 class Header extends Component {
   render() {
     return (
-      <div className="Header">
-        <div className={style.header_container}>
-        </div>
-      </div>
-
-  );
+      <StyledHeader>
+        <div id="header-container"></div>
+      </StyledHeader>
+    );
   }
 }
 
